@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FreshMart Grocery Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link Your CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="sticky-header">
+    <div class="logo">Krishna Grocery Store</div>
+
+    <div class="header-search">
+        <input type="text" placeholder="Search products...">
+    </div>
+
+    <a href="javascript:void(0)" class="cart-icon" onclick="openCart()">
+        🛒 Cart <span>0</span>
+    </a>
+</header>
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+
+<section class="hero">
+    <img src="images/M.png" class="slide active">
+    <img src="images/1.png" class="slide">
+    <img src="images/2.png" class="slide">
+
+    <div class="hero-content">
+        <h2>Fresh Groceries Delivered Fast</h2>
+        <p>Shop your daily essentials at the best prices.</p>
+        <a href="#categories" class="btn">Shop Now</a>
+    </div>
+</section>
+
+<!-- =========================
+     CATEGORY SECTION
+========================= -->
+
+<section class="shop-category" id="categories">
+    <h2>Shop by Category</h2>
+
+    <div class="category-grid">
+
+        <div class="category-card" data-category="Cooking Essentials">
+            <img src="images/cooking-essentials.jpg">
+            <h3>Cooking Essentials</h3>
+        </div>
+
+        <div class="category-card" data-category="Snacks & Beverages">
+            <img src="images/snacks-beverages.jpg">
+            <h3>Snacks & Beverages</h3>
+        </div>
+
+        <div class="category-card" data-category="Personal Care">
+            <img src="images/personal-care.jpg">
+            <h3>Personal Care</h3>
+        </div>
+
+        <div class="category-card" data-category="Soft Drinks">
+            <img src="images/soft-drinks.jpg">
+            <h3>Soft Drinks</h3>
+        </div>
+
+        <div class="category-card" data-category="Dairy Products">
+            <img src="images/dairy-products.jpg">
+            <h3>Dairy Products</h3>
+        </div>
+
+        <div class="category-card" data-category="Bakery Items">
+            <img src="images/bakery.jpg">
+            <h3>Bakery Items</h3>
+        </div>
+
+        <div class="category-card" data-category="Fruits & Vegetables">
+            <img src="images/fruits-vegetables.jpg">
+            <h3>Fruits & Vegetables</h3>
+        </div>
+
+        <div class="category-card" data-category="Frozen Foods">
+            <img src="images/frozen.jpg">
+            <h3>Frozen Foods</h3>
+        </div>
+
+        <div class="category-card" data-category="Cleaning Essentials">
+            <img src="images/cleaning.jpg">
+            <h3>Cleaning Essentials</h3>
+        </div>
+
+        <div class="category-card" data-category="Dry Fruits">
+            <img src="images/dry-fruits.jpg">
+            <h3>Dry Fruits</h3>
+        </div>
+
+        <div class="category-card" data-category="Health & Wellness">
+            <img src="images/health-wellness.jpg">
+            <h3>Health & Wellness</h3>
+        </div>
+
+        <div class="category-card" data-category="Stationery">
+            <img src="images/stationery.jpg">
+            <h3>Stationery</h3>
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================
+     SUBCATEGORY SECTION
+========================= -->
+
+<section id="subcategorySection" class="subcategory-section" style="display:none;">
+    <h2 id="subcategoryTitle"></h2>
+    <div id="subcategoryGrid" class="subcategory-grid"></div>
+</section>
+
+<!-- =========================
+     PRODUCTS SECTION
+========================= -->
+
+<section id="productsSection" class="filter-section">
+    <h2 style="text-align:center;">Products</h2>
+
+    <div id="productContainer" class="products-container"></div>
+</section>
+
+
+<!-- =========================
+     CART SECTION
+========================= -->
+<section id="cartSection" style="display:none; padding:40px;">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <h3 id="cartTotal"></h3>
+    <button onclick="checkout()" class="checkout-btn">Proceed to Checkout</button>
+</section>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+    <p>© 2026 Krishna Grocery Store | All Rights Reserved</p>
+</footer>
+
+<!-- =========================
+     SCRIPTS
+========================= -->
+
+<script src="product.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
